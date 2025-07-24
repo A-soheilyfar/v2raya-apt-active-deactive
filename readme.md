@@ -1,3 +1,24 @@
+# فعال کردن service برای startup
+`sudo systemctl enable v2raya`
+
+# شروع service
+`sudo systemctl start v2raya`
+
+# چک کردن که درست کار می‌کنه
+`sudo systemctl status v2raya`
+برگردوندن repository:
+```bash
+bash# برگردوندن فایل repository
+sudo mv /etc/apt/sources.list.d/v2raya.list.disabled /etc/apt/sources.list.d/v2raya.list 2>/dev/null || true
+```
+
+# چک کردن که برگشته
+`ls /etc/apt/sources.list.d/ | grep v2ray`
+
+
+
+
+
 روش 1: غیرفعال کردن repository v2raya
 ```bash
 bash# پیدا کردن فایل repository v2raya
